@@ -1,4 +1,4 @@
-def check_temperature(temp_str: str):
+def check_temperature(temp_str: str) -> int:
     """Tries to convert the input into an int"""
     try:
         temp = int(temp_str)
@@ -15,6 +15,8 @@ def check_temperature(temp_str: str):
 
 def test_temperature_input() -> None:
     """Tests the check_temperature function"""
+    print("=== Garden Temperature Checker ===")
+    print()
     tests = ["25", "abc", "100", "-50"]
     for i in tests:
         print(f"Testing temperature: {i}")
