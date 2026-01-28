@@ -11,7 +11,7 @@ def check_empty(plant: str | None) -> None:
         raise EmptyStringError("[empty name]")
 
 
-def water_plants(plant_list: list) -> None:
+def water_plants(plant_list: list[str | None]) -> None:
     """Tries to water all the plants"""
     print("Opening watering system")
     error = False

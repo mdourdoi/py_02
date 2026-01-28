@@ -67,7 +67,7 @@ class Garden:
         for plant in plants:
             self.add_plant(plant)
 
-    def get_plants(self) -> dict:
+    def get_plants(self) -> dict[str, Plant]:
         """Securely gets the list of plants"""
         return (self.__plants)
 
@@ -141,7 +141,7 @@ class GardenManager:
             self.__water_tank = 0
             print("Error : Tank supply cannot have a negative value, set to 0")
 
-    def get_tank(self):
+    def get_tank(self) -> int:
         """Get the amount of water available in the water_tank"""
         return self.__water_tank
 
